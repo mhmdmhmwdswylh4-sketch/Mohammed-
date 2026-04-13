@@ -1,0 +1,9 @@
+{
+  "name": "Pentest-Controller",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/go:1": {}
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y nmap nuclei subfinder git && echo 'Tools Installed Successfully!'"
+}
