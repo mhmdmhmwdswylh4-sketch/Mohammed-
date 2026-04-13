@@ -5,5 +5,5 @@
     "ghcr.io/devcontainers/features/python:1": {},
     "ghcr.io/devcontainers/features/go:1": {}
   },
-  "postCreateCommand": "apt-get update && apt-get install -y nmap nuclei subfinder git && echo 'Tools Installed Successfully!'"
+  "postCreateCommand": "apt-get update && apt-get install -y iputils-ping net-tools nmap nuclei subfinder git && echo 'Pentest Tools Installed!'"
 }
