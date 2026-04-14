@@ -1,9 +1,12 @@
-{
+here{
   "name": "Pentest-Controller",
   "image": "mcr.microsoft.com/devcontainers/base:debian",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {},
-    "ghcr.io/devcontainers/features/go:1": {}
+    "ghcr.io/devcontainers/features/go:1": {},
+    "ghcr.io/devcontainers/features/sshd:1": {
+        "version": "latest"
+    }
   },
   "postCreateCommand": "apt-get update && apt-get install -y iputils-ping net-tools nmap nuclei subfinder git && echo 'Pentest Tools Installed!'"
 }
