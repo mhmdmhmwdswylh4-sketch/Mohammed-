@@ -8,5 +8,5 @@ here{
         "version": "latest"
     }
   },
-  "postCreateCommand": "apt-get update && apt-get install -y iputils-ping net-tools nmap nuclei subfinder git && echo 'Pentest Tools Installed!'"
+  "postCreateCommand": "sudo rm -rf /etc/apt/sources.list.d/yarn.list && sudo apt-get update && sudo apt-get install -y iputils-ping net-tools nmap nuclei subfinder git && echo 'Pentest Tools Installed!'"
 }
