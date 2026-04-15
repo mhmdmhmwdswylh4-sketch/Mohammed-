@@ -1,0 +1,13 @@
+ {
+    "name": "Full-Security-Environment",
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y nmap sqlmap netcat-traditional dnsutils git curl wget htop iputils-ping python3-pip && pip3 install --upgrade pip"
+ }
